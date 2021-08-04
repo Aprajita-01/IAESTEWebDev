@@ -1,6 +1,6 @@
 body{
 	text-align: center;
-	background: #232425;
+	background: #322F3D;
   font-family: sans-serif;
   font-weight: 100;
 }
@@ -20,12 +20,12 @@ h2{
 }
 	.countdown{
 			font-family: sans-serif;
-	color: #fff;
+	color: #381460;
 	display: inline-block;
 	font-weight: 100;
 	text-align: center;
 	font-size: 20px;
-	}
+		}
 	#endtime{
 		padding: 5px;
 		width: 200px;
@@ -34,13 +34,13 @@ h2{
 	.countdown-content{
 		padding: 10px;
 	border-radius: 3px;
-	background: #4c4c4c;
+	background: #F6C3E5;
 	display: inline-block;
 	}
 	.countdown-content span{
 		padding: 15px;
 	border-radius: 3px;
-	background: #c00;
+	background: #A278B5;
 	display: inline-block;
 	}
 	.btn{
@@ -49,7 +49,7 @@ h2{
 		margin:10px auto;
 		outline: none;
 		border: none;
-		background: rgb(98, 64, 224);
+		background: #F6C3E5;
 		font-size: 16px;
 		font-weight: bold;
 		color: #232425;
@@ -57,7 +57,7 @@ h2{
 	}
 	a{
   display: inline-block;
-  color: #fff;
+  color: black;
   font-size: 20px;
   padding: 20px;
   background: #fff;;
@@ -69,7 +69,7 @@ a:hover{
   background: #fff;;
 }
 	.btn:hover{
-		background: #c00;
+		background: #ffffff;
 	}
 	.btn-disabled{
         cursor: default;
@@ -81,13 +81,4 @@ a:hover{
 	font-size: 16px;
 }
 
-footer {
- font-size: 12px;
-  clear: both;
-  text-align: center;
-  margin-top: auto;
-  margin-right: auto;
-  margin-bottom: auto;
-  margin-left: auto;
-
-        }
+    
