@@ -1,8 +1,12 @@
-body{
+
+
+
+  body{
 	text-align: center;
-	background: #322F3D;
+	background: #092d52;
   font-family: sans-serif;
   font-weight: 100;
+  position: relative;
 }
 
 h1{
@@ -10,6 +14,7 @@ h1{
   font-weight: 100;
   font-size: 30px;
   margin: 40px 0px 20px;
+
 }
 
 h2{
@@ -20,27 +25,28 @@ h2{
 }
 	.countdown{
 			font-family: sans-serif;
-	color: #381460;
+	color: #fff;
 	display: inline-block;
 	font-weight: 100;
 	text-align: center;
 	font-size: 20px;
-		}
+	}
 	#endtime{
 		padding: 5px;
 		width: 200px;
 		font-size: 12px;
-	}
+		background: rgb(238, 191, 234);	}
 	.countdown-content{
 		padding: 10px;
-	border-radius: 3px;
-	background: #F6C3E5;
+	border-radius: 10px;
+	background: #4c4c4c;
 	display: inline-block;
+
 	}
 	.countdown-content span{
 		padding: 15px;
-	border-radius: 3px;
-	background: #A278B5;
+	border-radius: 50px;
+	background: rgb(238, 191, 234);
 	display: inline-block;
 	}
 	.btn{
@@ -49,7 +55,7 @@ h2{
 		margin:10px auto;
 		outline: none;
 		border: none;
-		background: #F6C3E5;
+		background: rgb(199, 105, 199);
 		font-size: 16px;
 		font-weight: bold;
 		color: #232425;
@@ -57,7 +63,7 @@ h2{
 	}
 	a{
   display: inline-block;
-  color: black;
+  color: #fff;
   font-size: 20px;
   padding: 20px;
   background: #fff;;
@@ -69,7 +75,7 @@ a:hover{
   background: #fff;;
 }
 	.btn:hover{
-		background: #ffffff;
+		background: rgb(116, 177, 233);
 	}
 	.btn-disabled{
         cursor: default;
@@ -81,4 +87,26 @@ a:hover{
 	font-size: 16px;
 }
 
-    
+p{
+    color: #fff;
+}
+.curDate{
+	font-size: 350px;
+	z-index: -1;
+	position: relative;
+	opacity: 0.8;
+	color:#575555;
+	font-family: 'Codystar', cursive;
+}
+.todayText{
+	font-size: 150px;
+	z-index: -100;
+	position: absolute;
+margin-left: auto;
+margin-right: auto;
+width: 99%;
+top: 100px;
+font-family: sans-serif;
+font-weight: 900;
+color: rgba(0, 0, 0, 0.377);
+}
