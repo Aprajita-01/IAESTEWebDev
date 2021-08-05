@@ -1,24 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
-    <title>Stopwatch</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stopwatch</title>
+<link rel="stylesheet" href="style1.css">
+<html lang="en">
+  
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;1,300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-    <link rel="stylesheet" href="style1.css">
-</head>
-<a href="stopwatch.html">Stopwatch</a>
-<a href="countdown.html">Countdown</a>  
-<body>
-    <div class="container">
-        <div class="display">
-            00 : 00 : 00 : 000
-        </div>
-        <div class="buttons">
-            <button id="start">Start</button>
-            <button id="pause">Pause</button>
-            <button id="reset">Reset</button>
-        </div>
+<nav>
+  <div class="logo">
+    <video src="TIME4U.mp4" autoplay loop></video>
+  </div>
+  <ul class="nav-links">
+      <li><a href="stopwatch.html">Stopwatch</a></li>
+      <li><a href="countdown.html">Countdown</a></li>
+  </ul>
+  <div class="burger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+  </div>
+</nav>
+
+
+
+  <body>
+    <div class="stopwatch">
+      <h1><span class="gold">TIME4U</span> STOPWATCH</h1>
+      <div class="circle">
+        <span class="time" id="display">00:00:00</span>
+      </div>
+
+      <div class="controls">
+        <button class="buttonPlay">
+          <img id="playButton" src="https://res.cloudinary.com/https-tinloof-com/image/upload/v1593360448/blog/time-in-js/play-button_opkxmt.svg" />
+
+          <img id="pauseButton" src="https://res.cloudinary.com/https-tinloof-com/image/upload/v1593360448/blog/time-in-js/pause-button_pinhpy.svg" />
+        </button>
+
+        <button class="buttonReset">
+          <img id="resetButton" src="https://res.cloudinary.com/https-tinloof-com/image/upload/v1593360448/blog/time-in-js/reset-button_mdv6wf.svg" />
+        </button>
+      </div>
     </div>
-
     <script src="script1.js"></script>
-</body>
+  </body>
+  <!-- <footer><TT>&copy; TIME4U 2021</TT></footer> -->
 </html>
+
