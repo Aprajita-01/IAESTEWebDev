@@ -1,13 +1,16 @@
-<!DOCTYPE html>
-  <title>Countdown</title>
-<link rel="stylesheet" href="style2.css">
-<a href="stopwatch.html">Stopwatch</a>
-<a href="countdown.html">Countdown</a>
+<html>
 <body>
+    <head><link rel ="stylesheet" type="text/css" href="style2.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Codystar:wght@300&display=swap" rel="stylesheet"></head>
+      <div class="todayText">Today is</div>
+  <div id="curdate" class="curDate"></div>
 <div class="countdown">
-    <h2>Deadline Date:</h2>
-      <input type="text" placeholder="2016-09-11 13:14:00" id="endtime" value=""> 
-    <button class="btn" id="start-count">Start</button>
+
+    <h2>Choose a date from the calendar</h2>
+      <input type="date" placeholder="2016-09-11 13:14:00" id="endtime" value=""> 
+    <button class="btn" id="start-count">Calculate</button>
     <h1>Countdown：</h1>
     <div class="countdown-content">
      <span id="day"></span> Days
@@ -16,13 +19,14 @@
       <span id="second"></span> Seconds
     </div> 
     
-    
-    <br>
-    <br>
-    <br>
-    <br>
-    
+
   </div>
+
+
+
+<scrip src="script2.js"></script>
+
+
+
 </body>
-  <script src="script2.js"></script>
-  </html>
+</html>

@@ -54,3 +54,6 @@ function countDown() {　　
     toZero;
   }
 }
+const d = new Date();
+var currentdate = d.getDate()+' - '+(d.getMonth()+1)+' - '+(d.getFullYear());
+document.getElementById("curdate").innerHTML = currentdate;
