@@ -1,3 +1,51 @@
+function navSlide() {
+  const burger = document.querySelector(".burger");
+  const nav = document.querySelector(".nav-links");
+  const navLinks = document.querySelectorAll(".nav-links li");
+  
+  burger.addEventListener("click", () => {
+      //Toggle Nav
+      nav.classList.toggle("nav-active");
+      
+      //Animate Links
+      navLinks.forEach((link, index) => {
+          if (link.style.animation) {
+              link.style.animation = ""
+          } else {
+              link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.5}s`;
+          }
+      });
+      //Burger Animation
+      burger.classList.toggle("toggle");
+  });
+  
+}
+
+navSlide();
+
+function currentTime() {
+  var date = new Date(); /* creating object of Date class */
+  var hour = date.getHours();
+  var min = date.getMinutes();
+  var sec = date.getSeconds();
+  hour = updateTime(hour);
+  min = updateTime(min);
+  sec = updateTime(sec);
+  document.getElementById("clock").innerText = hour + " : " + min + " : " + sec; /* adding time to the div */
+  var t = setTimeout(function(){ currentTime() }, 1000); /* setting timer */
+}
+
+function updateTime(k) {
+  if (k < 10) {
+    return "0" + k;
+  }
+  else {
+    return k;
+  }
+}
+
+currentTime(); /* calling currentTime() function to initiate the process */
+
 var timer = null;
 var end;
 var toZero;
@@ -54,6 +102,6 @@ function countDown() {　　
     toZero;
   }
 }
-const d = new Date();
-var currentdate = d.getDate()+' - '+(d.getMonth()+1)+' - '+(d.getFullYear());
-document.getElementById("curdate").innerHTML = currentdate;
+
+
+
