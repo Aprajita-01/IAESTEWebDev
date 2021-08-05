@@ -189,11 +189,11 @@ h2{
 		border-radius: 11px;
 	}
 	.countdown-content{
-		padding: 10px;
-	border-radius: 14px;
-	background: black;
-	color: #66f5ff;
-	display: inline-block;
+		padding: 5px;
+	    border-radius: 14px;
+	    background: black;
+	    color: #66f5ff;
+	    display: inline-block;
 	}
 	.countdown-content span{
 		padding: 20px;
