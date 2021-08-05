@@ -1,5 +1,4 @@
-
-{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -257,8 +256,8 @@ a {
 }
 
 footer {
-	margin-left: 50%;
+    padding-top: 40px;
+    margin-left: 47%;
 }
-
 
     
