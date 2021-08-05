@@ -23,18 +23,18 @@ function navSlide() {
 
 navSlide();
 
-function currentTime() {
+/*function currentTime() {
   var date = new Date(); /* creating object of Date class */
-  var hour = date.getHours();
+ /* var hour = date.getHours();
   var min = date.getMinutes();
-  var sec = date.getSeconds();
-  hour = updateTime(hour);
+  var sec = date.getSeconds();*/
+  /*hour = updateTime(hour);
   min = updateTime(min);
   sec = updateTime(sec);
   document.getElementById("clock").innerText = hour + " : " + min + " : " + sec; /* adding time to the div */
-  var t = setTimeout(function(){ currentTime() }, 1000); /* setting timer */
+  /*var t = setTimeout(function(){ currentTime() }, 1000); /* setting timer */
 }
-
+/*
 function updateTime(k) {
   if (k < 10) {
     return "0" + k;
@@ -43,8 +43,15 @@ function updateTime(k) {
     return k;
   }
 }
+*/
+/*currentTime(); /* calling currentTime() function to initiate the process */
 
-currentTime(); /* calling currentTime() function to initiate the process */
+const d = new Date();
+var currentdate = d.getDate()+' - '+(d.getMonth()+1)+' - '+(d.getFullYear());
+document.getElementById("clock").innerHTML = currentdate;
+  <div id="clock"></div>
+
+
 
 var timer = null;
 var end;
